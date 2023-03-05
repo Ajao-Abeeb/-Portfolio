@@ -1,3 +1,6 @@
+body{
+  background-color: #ebdede;
+}
 .loader_bg {
     position: fixed;
     z-index: 9999999;
@@ -21,6 +24,13 @@
     width: 280px;
   }
   /* nav */
+  .navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgb(95, 93, 93);
+  }
   .navbar-brand h3 span{
     color: orangered;
     font-family:   "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji'";
@@ -32,6 +42,47 @@
 }
 .navbar-nav .nav-item  .nav-link:hover{
     color: orangered;
+}
+/* socialbtn */
+.fa-whatsapp{
+  color: orangered;
+  font-size: 30px;
+}
+.fa-whatsapp:hover{
+  color: rgb(1, 93, 1);
+}
+.fa-linkedin{
+  color: orangered;
+  font-size: 30px;
+}
+.fa-linkedin:hover{
+  color: blue;
+}
+.fa-twitter{
+  color: orangered;
+  font-size: 30px;
+}
+.fa-twitter:hover{
+  color: lightseagreen;
+}
+.fa-facebook{
+  color: orangered;
+  font-size: 30px;
+}
+.fa-facebook:hover{
+  color: rgba(0, 0, 255, 0.746);
+}
+.fa-github{
+  color: orangered;
+  font-size: 30px;
+}
+.fa-github:hover{
+  color: black;
+}
+/* Quicklink */
+.aaa{
+  text-decoration: none;
+  color: white;
 }
 /* .darkmode */
 .darkmode{
@@ -55,10 +106,22 @@ h2{
 .image{
   filter: brightness(50%);
 }
-#contact ,.con {
-background-color: #212529;
+#contact{
+background-color: #28333e;
 background-image: url("image/map-image.png");
 background-repeat: no-repeat;
 background-position: center;
+}
+@media(max-width: 414px){
+  body{
+    overflow-x: hidden;
+  }
+  .socialbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  
 }
  

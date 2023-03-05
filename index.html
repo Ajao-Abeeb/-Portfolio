@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>* Portfolio *</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+    <!-- External fonts -->
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="fonts/linearicons/style.css">
+
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="dist/aos.css">   
 </head>
@@ -15,13 +18,13 @@
         <div class="loader"><img src="image/loader.gif" alt="#" /></div>
      </div>
  <!-- Navber -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark   ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark  justify-content-between ">
     <a class="navbar-brand"><h3><span>Wel</span>come!!</h3> </a>
     <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div id="my-nav" class="collapse navbar-collapse justify-content-end">
-         <ul class="navbar-nav justify-content-end" style="font-family:   Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;">
+    <div id="my-nav" class="collapse navbar-collapse  ">
+         <ul class="navbar-nav  ml-auto" style="font-family:   Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;">
             <li class="nav-item active ">
                 <a class="nav-link " href="#home"><h5>Home</h5>  <span class="sr-only">(current)</span></a>
             </li>
@@ -37,15 +40,14 @@
             <li class="nav-item active ">
                 <a class="nav-link" href="#contact me"><h5>Contact me</h5>  </a>
             </li>
-            
+            <div class="nav-link">
+                <i style="color: white; font-size: 15px;" class="lnr lnr-moon nav-link" onclick="darkmode()" id="dark"></i>
+               </div>
           </ul>
-          <div class="">
-          <i style="color: white; font-size: 15px;" class="fa fa-moon" onclick="darkmode()" id="dark"></i>
-
-            </div>
+          
 </div>
-  </nav><br><br><br><br><br> 
-  <div class="container justify-content-center mt-1 "  data-aos="zoom-in" data-aos-delay="100">
+  </nav> 
+  <div class="container justify-content-center mt-5 "  data-aos="zoom-in" data-aos-delay="100">
     <div class=" row justify-content-between"  >
     <div class="col-md-5 mb-4 col-sm-10">
          <div class="h-100 p-5 text-dark  border rounded-3 align-items-center ">
@@ -53,19 +55,19 @@
                  <h6 id="home"class="text-center"><u>Welcome to my Portfolio Website</u></h6>
                     <div class="left">
                      <div class="text-center">
-                     <h1 class="mr" >Hey folks,</h1><br>
-                     <p style=" font-size: 33px; color: orangered">I'm <span class="typed" style=" font-size: 33px; color: orangered;" data-typed-items=" Ajao Abeeb, Web Developer, Freelancer, Backend Developer,  Technical Writer, Graphics Designer"></span></p>
-                 </div> <br><br> 
-                             <p class="p">Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web development.</p>
+                     <h1 class="mr" >Hey folks,</h1>
+                     <p style=" font-size: 33px; color: orangered">I am a <span class="typed" style=" font-size: 33px; color: orangered;" data-typed-items=" Ajao Abeeb, Web Developer, Freelancer, Backend Developer,  Technical Writer, Graphics Designer"></span></p>
+                    </div> 
+                             <p class="p mt-3">Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web development.</p>
                      </div><br>
-                         <div class="text-center ">
-                                  
-                               <a href="https://wa.link/oi8ss2" target="_blank"><i class="fab fa-whatsapp   fa-2x mr-3" style="color: orangered ;"  ></i></a>
-                               <a href="" target="_blank"><i class="fab fa-linkedin  fa-2x mr-3" style="color: orangered ;" ></i> </a>
-                              <a href="https://twitter.com/adeprogrammer/status" target="_blank"> <i class="fab fa-twitter  fa-2x mr-3" style="color: orangered ;"  ></i></a>
-                               <a href="https://www.facebook.com/profile.php?id=100083784663959" target="_blank"><i class="fab fa-facebook fa-2x mr-3" style="color: orangered ;"></i></a>
-                             </div>
-                            <hr  style="outline: 1px solid   ;">  
+                         <div class="socialbtn">
+                            <a href="https://wa.link/oi8ss2" target="_blank"><i class="fab fa-whatsapp "    ></i></a>
+                               <a href="" target="_blank"><i class="fab fa-linkedin "></i> </a>
+                              <a href="https://twitter.com/adebobby-tech/status" target="_blank"> <i class="fab fa-twitter"></i></a>
+                               <a href="https://www.facebook.com/profile.php?id=100083784663959" target="_blank"><i class="fab fa-facebook"></i></a>
+                              <a href="http://" target="_blank" > <i class="fab fa-github"></i></a>
+                              </div>
+                            <hr  style="outline: 1px solid ;">  
                       <br>
                       <div class="justify-content-center align-items-center d-flex">
                <button class="btn btn-outline-primary" type="button">Hire Me</button>
@@ -96,7 +98,7 @@
              <br><br>
                  <div class="body">
                 <h4 class="text-center">Let me introduce myself</h4>
-                     <p class="text p text-justify container"> I am a website developer and graphic designer. I have over 5 years of experience in the field and love working with both small and large scale buisnesses to help them create beautiful and impactful websites. I also enjoy working on logos,branding and marketing collateral for buisnesses. When I'm not knee-deep in code or design, I love spending time with my family and friends, playing chess and reading.</p>
+                     <p class="text p text-justify container"> I am a website developer and graphic designer. I have over 1 years of experience in the field and love working with both small and large scale buisnesses to help them create beautiful and impactful websites. I also enjoy working on logos,branding and marketing collateral for buisnesses. When I'm not knee-deep in code or design, I love spending time with my family and friends, playing chess and reading.</p>
                 <br><br><br><br> </div>
               </div>
               </div>
@@ -123,13 +125,13 @@
                      <div class="progress-bar bg-primary" style="width: 95%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"data-aos="fade-right">HTML 95%</div>
                  </div>
                  <div class="progress mt-4">
-                     <div class="progress-bar bg-primary" style="width: 90%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"data-aos="fade-right">UI/UX 90%</div>
+                     <div class="progress-bar bg-primary" style="width: 95%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"data-aos="fade-right">PYTHON 85%</div>
                  </div>
                  <div class="progress mt-4">
                      <div class="progress-bar bg-primary" style="width: 85%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"data-aos="fade-right">MYSQL 85%</div>
                  </div>
                  <div class="progress mt-4">
-                     <div class="progress-bar bg-primary" style="width: 80%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"data-aos="fade-right"> C# 80%</div>
+                     <div class="progress-bar bg-primary" style="width: 80%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"data-aos="fade-right">DJANGO 80%</div>
                  </div>
                  <div class="progress mt-4">
                      <div class="progress-bar bg-primary" style="width: 90%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"data-aos="fade-right"> CSS 90%</div>
@@ -196,9 +198,9 @@
     <div class="card-header">
         <h2 class="card-title text-center section-heading text-uppercase" id="contact me">CONTACT ME</h2> 
     </div><br><br>
- <div class="container con">
+ <div class="container "id="contact">
          
- <form method="get" action="">
+ <form method="get" action="" id="contact">
   <div class="row align-items-stretch mb-5">
     <div class="col-md-6">
             <div class="form-group mb-5">
@@ -254,19 +256,19 @@
         </div>
         <div class="col-lg-4 col-sm-4 mb-4" >
             <div class="container">
-                <h3  class=" text-light " style="color: white; border-bottom:1px solid white;">Address</h3>
-                <p class="text-light text-justify" style="font-size: 15px;"> <i class="fa fa-map-marker-alt text-danger"></i> 52,Sanyo temidire Street,<br>Lagos-Ibadan expressway, Nigeria.</p>
+                <h3  class=" text-light " style=" border-bottom:1px solid white;">Address</h3>
+                <p class="  text-justify" style="font-size: 15px; color: white;"> <i class="fa fa-map-marker-alt" style="color:orangered ;" ></i> 52,Sanyo temidire Street,<br>Lagos-Ibadan expressway, Nigeria.</p>
                 <a href="mailto:ajaoabeeb526@gmail.com"> <p class="text-light" style="font-size: 15px;"> <i class="fa  fa-envelope" style="color:orangered ;"></i>  ajaoabeeb526@gmail.com</p></a>
                <a href="tel:ajaoabeeb526@gmail.com"><p class="text-light" style="font-size: 15px;"> <i class="fa  fa-phone " style="color:orangered ;"></i>  +2348121488174</p></a> 
                 
                 
-                <div class=" justify-content-between">
-                    <i class="fab fa-whatsapp" style="color:  orangered;" ><a href="https://wa.link/oi8ss2" target="_blank"></a></i>
-                    <i class="fab fa-linkedin " style="color: orangered;"><a href="https://linkedin/in/abeeb-ajao"></a></i>
-                    <i class="fab fa-twitter "  style="color: orangered;"><a href="https://twitter.com/Adebobby_tech"></a></i> 
-                    <i class="fab fa-facebook "  style="color:  orangered"><a href="https://www.facebook.com/profile.php?id=100083784663959"></a></i>
-                 
-                   </div>
+               <div class="">
+                <a href="https://wa.link/oi8ss2" target="_blank"><i class="fab fa-whatsapp "    ></i></a>
+                   <a href="" target="_blank"><i class="fab fa-linkedin "></i> </a>
+                  <a href="https://twitter.com/adebobby-tech/status" target="_blank"> <i class="fab fa-twitter"></i></a>
+                   <a href="https://www.facebook.com/profile.php?id=100083784663959" target="_blank"><i class="fab fa-facebook"></i></a>
+                   <a href="http://" target="_blank" > <i class="fab fa-github"></i></a>
+                 </div>
                    <p class="portfolio-caption-subheading   text-light">FOLLOW FOR MORE!!</p>
             </div>
         </div>
