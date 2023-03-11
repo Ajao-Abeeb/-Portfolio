@@ -143,7 +143,9 @@ h2 {
   height: 200px;
   width: 350px;
 }
-
+.portfolio-caption-heading{
+  color: black;
+}
 @media(max-width: 414px) {
 
   .socialbtn {
