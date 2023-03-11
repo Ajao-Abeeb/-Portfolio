@@ -1,6 +1,9 @@
 body{
   background-color: #ebdede;
 }
+a{
+  text-decoration: none;
+}
 .loader_bg {
     position: fixed;
     z-index: 9999999;
@@ -112,10 +115,12 @@ background-image: url("image/map-image.png");
 background-repeat: no-repeat;
 background-position: center;
 }
+.img-thumbnail{
+  height: 200px;
+  width: 350px;
+}
 @media(max-width: 414px){
-  body{
-    overflow-x: hidden;
-  }
+  
   .socialbtn{
     display: flex;
     justify-content: center;
