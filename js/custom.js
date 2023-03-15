@@ -15,9 +15,10 @@
 })(jQuery);
 function darkmode(){
   var dark = document.getElementById('dark');
-  dark.style.color = "black" ;
-  var element = document.body;
+   var element = document.body;
   element.classList.toggle("darkmode");
+  dark.style.color = "white";
+  
   return ;
   
 }

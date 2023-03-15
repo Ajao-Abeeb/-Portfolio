@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="dist/aos.css">
 </head>
 
-<body>
+<body id="top">
     <div class="loader_bg">
         <div class="loader"><img src="image/loader.gif" alt="#" /></div>
     </div>
@@ -57,10 +57,7 @@
                         <h5>Contact me</h5>
                     </a>
                 </li>
-                <div class="nav-link">
-                    <i style="color: white; font-size: 1.25rem;" class="lnr lnr-moon nav-link" onclick="darkmode()"
-                        id="dark"></i>
-                </div>
+                
             </ul>
 
         </div>
@@ -211,44 +208,60 @@
         <div class="card">
             <div class="card-header">
                 <h2 class="card-title text-center section-heading text-uppercase" id="project">PROJECTS</h2>
+                <p class="text-center text-muted small  ">Some of my project are listed here</p>
             </div>
             <div class="card-body row container">
 
                 <div class="col-md-4 col-sm-12 mb-4">
-                    <img class=" img-thumbnail" src=" image/DashBoard - Google Chrome 11_20_2022 4_15_29 PM.png" alt=""
+                    <img class=" img-thumbnail" src="image/project-ria.png" alt=""
                         data-aos="fade-right">
-                    <h5 class="portfolio-caption-heading text-center">Hostel Management/User page</h5>
-                    <p class="portfolio-caption-subheading text-center text-muted">Website design</p>
+                    <h5 class="portfolio-caption-heading text-center">House Estate</h5>
+                    <div class="code">
+                        <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-code"></i></p>
+                        <a href="https://boisterous-manatee-363f3a.netlify.app/" target="_blank"><p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-play-circle"></i></p></a>
+                    </div>
                 </div>
                 <div class="col-md-4 col-sm-12 mb-4">
                     <img class=" img-thumbnail" src="image/DashBoard - Google Chrome 11_20_2022 4_15_29 PM.png" alt=""
                         data-aos="fade-left">
-                    <h5 class="portfolio-caption-heading text-center">E-commerce Management/Admin page</h5>
-                    <p class="portfolio-caption-subheading text-center text-muted">Website design</p>
+                    <h5 class="portfolio-caption-heading text-center">E-commerce  </h5>
+                    <div class="code">
+                        <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-code"></i></p>
+                        <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-play-circle"></i></p>
+                    </div> 
                 </div>
                 <div class="col-md-4 col-sm-12 mb-4">
                     <img class="  img-thumbnail" src="image/images.jfif" alt="" data-aos="fade-right">
                     <h5 class="portfolio-caption-heading text-center">Technical Writer</h5>
-                    <p class="portfolio-caption-subheading text-center text-muted"> <a
-                            href="https://adebobbytech.hashnode.dev/"><button class="btn btn-outline-primary">Click
-                                Link</button></a> </p>
+                     <div class="code">
+                        <a href="https://adebobbytech.hashnode.dev/"><p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-play-circle"></i></p></a>
+                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 mb-4 ">
                     <img class="  img-thumbnail" src="image/DashBoard - Google Chrome 11_20_2022 4_15_29 PM.png" alt=""
                         data-aos="fade-left">
                     <h5 class="portfolio-caption-heading text-center">Calculator</h5>
-                    <p class="portfolio-caption-subheading text-center text-muted">Programming</p>
+                    <div class="code">
+                        <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-code"></i></p>
+                        <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-play-circle"></i></p>
+                    </div>
                 </div>
                 <div class="col-md-4 col-sm-12 mb-4 mb-sm-0 ">
                     <img class="  img-thumbnail" src="image/DashBoard - Google Chrome 11_20_2022 4_15_29 PM.png" alt=""
                         data-aos="fade-right">
                     <h5 class="portfolio-caption-heading text-center">Explore</h5>
-                    <p class="portfolio-caption-subheading text-center text-muted">Graphics design</p>
+                    <div class="code">
+                        <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-code"></i></p>
+                        <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-play-circle"></i></p>
+                    </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <img class=" img-thumbnail" src="image/uiux.jpg" alt="ui/ux design" data-aos="fade-left">
                     <h5 class="portfolio-caption-heading text-center">Shopping</h5>
-                    <p class="portfolio-caption-subheading text-center text-muted">UI/UX design</p>
+                    <div class="code">
+                        <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-code"></i></p>
+                        <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-play-circle"></i></p>
+                    </div>
                 </div>
 
 
@@ -394,7 +407,13 @@
         </div>
     </footer>
 
-
+     <!-- to top -->
+  <a id="backtotop" href="#top"><i class="fa fa-arrow-up-from-ground-water"></i></a>
+<!-- darkmode -->
+<div class="" id="back">
+    <i class="lnr lnr-moon moon" onclick="darkmode()"
+        id="dark"></i>
+</div>
 
     <script src="dist/aos.js"></script>
     <script>
@@ -411,6 +430,7 @@
     <script src="aos/aos.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jquery.backtotop.js"></script>
 </body>
 
 </html>
