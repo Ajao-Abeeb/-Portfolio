@@ -1,5 +1,6 @@
 body {
   background-color: #ebdede;
+  overflow-x: hidden;
 }
 
 a {
@@ -34,8 +35,10 @@ a {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 15;
   background-color: rgb(95, 93, 93);
+  backdrop-filter: blur(20px);
+
 }
 
 .navbar-brand h3 span {
@@ -48,11 +51,23 @@ a {
   font-family: "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji'";
 
 }
+.navbar-nav {
+  font-family:"Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji";
+}
 
 .navbar-nav .nav-item .nav-link:hover {
   color: orangered;
 }
-
+ .animate , .typed{
+  font-size: 33px;
+  color: orangered;
+}
+.resume{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
 /* socialbtn */
 .fa-whatsapp {
   color: orangered;
@@ -115,7 +130,7 @@ a {
 
   position: fixed;
   bottom: 55px;
-  right: 20px;
+  right: 50px;
   width: 36px;
   height: 36px;
   font-size: 19px;
@@ -137,12 +152,17 @@ transform: translateY(-70px);
 h2 {
   color: orangered;
 }
-
+.section-profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .image {
   filter: brightness(60%);
   border-radius: 50%;
   height: 200px;
   width: 200px;
+  
 }
 
 .hi {
@@ -150,9 +170,7 @@ h2 {
   width: 100px;
 }
 
-.image {
-  filter: brightness(50%);
-}
+ 
 
 #contact {
   background-color: #28333e;
@@ -161,10 +179,6 @@ h2 {
   background-position: center;
 }
 
-.img-thumbnail {
- height: 199.97px;
- width:  350px;
-}
 .portfolio-caption-heading{
   color: black;
 }
@@ -174,7 +188,7 @@ h2 {
   position: fixed;
   visibility: hidden;
   bottom: 20px;
-  right: 20px;
+  right: 50px;
   width: 36px;
   height: 36px;
   font-size: 19px;
@@ -187,7 +201,7 @@ h2 {
 #backtotop   {
   animation: spin  2s  linear infinite;
 }
-@-webkit-keyframes spin{
+@keyframes spin{
   0%{
         transform: translateY(-5px);
   }
@@ -195,7 +209,10 @@ h2 {
     transform: translateY(-50px);
   }
 }
-
+.img-thumbnail{
+  height: 199px;
+  width: 420px;
+}
 .small{
   font-style: italic;
 }
@@ -226,10 +243,11 @@ h2 {
     padding: 5px;
   }
   #back , #backtotop{
-    right: 0px;
+    right: 20px;
     z-index: 999;
     position: fixed;
   }
+  
 }
 
 /* @media (max-width: 414px){
