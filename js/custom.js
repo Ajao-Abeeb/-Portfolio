@@ -7,7 +7,7 @@
 //loader
     setTimeout(function () {
       $('.loader_bg').fadeToggle();
-    }, 100);
+    }, 5000);
 
     // TOOLTIP
  
