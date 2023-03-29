@@ -197,6 +197,9 @@ h2 {
   height: 199px;
   width: 400px;
 }
+.img-fluid{
+  width: 100%;
+}
 .small{
   font-style: italic;
 }
@@ -217,6 +220,9 @@ h2 {
 .portfolio-caption-subheading i {
   color: orangered;
   margin-top: 7px;
+}
+.skills-img{
+  height: 48px;
 }
 @media(max-width: 414px) {
 
