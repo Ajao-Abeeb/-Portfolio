@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>* Portfolio *</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- External fonts -->
     <link rel="stylesheet" href="fonts/fontawesome-free-6.1.1-web/css/all.css">
     <link rel="stylesheet" href="fonts/linearicons/style.css">
@@ -17,11 +18,11 @@
 </head>
 
 <body id="top">
-    <div class="loader_bg">
+    <!-- <div class="loader_bg">
         <div class="loader">
             <img src="image/7YQl.gif" alt="">
         </div>
-    </div>
+    </div> -->
     <!-- Navber -->
     <nav class="navbar navbar-expand-lg navbar-dark    justify-content-between ">
         <a class="navbar-brand">
@@ -64,44 +65,68 @@
 
         </div>
     </nav>
-    <div class="container justify-content-center mt-5 ">
-        <div class=" row justify-content-between">
+    <nav class="header">
+        <ul class="ul">
+
+            <li class="nav-item  ">
+                <a class="nav-link active" href="#home">
+                    <i class="fa fa-home head"></i>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link head" href="#about me">
+                    <i class="fa fa-user head"></i>
+                </a>
+            </li>
+            <li class="nav-item  ">
+                <a class="nav-link" href="#skills">
+                    <i class="fa fa-book-atlas head"></i>
+                </a>
+            </li>
+            <li class="nav-item  ">
+                <a class="nav-link" href="#project">
+                    <i class="fa fa-briefcase-clock head"></i>
+                </a>
+            </li>
+            <li class="nav-item   ">
+                <a class="nav-link" href="#contact me">
+                    <i class="fa fa-contact-card head "></i>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    <div class="container mt-5 ">
+        <div class=" row justify-content-between animate-box" data-animate-effect="fadeInDown">
             <div class="col-md-5 mb-4 col-sm-10">
-                <div class="h-100 align-items-center ">
+                <div class="h-100 text-center ">
                     <div class=" mt-3 text-md-center">
-                        <h6 id="home" class="text-center"><u>Welcome to my Portfolio Website</u></h6>
-                        <div class="left">
-                            <div class="text-center">
-                                <h1 class="mr">Hey folks,</h1>
-                                <p class="animate">I am <span class="typed"
-                                        data-typed-items=" Ajao Abeeb, a Web Developer, a Freelancer, a Fullstack Developer, a Technical Writer, a Graphics Designer"></span>
-                                </p>
+                        <h6 id="home" class="up"><u>Welcome to my Portfolio Website</u></h6>
+                        <div>
+                            <div class="">
+                                <h6 class="animate mt-2 ">Hello,I am</h6>
+                                <span class="typed"
+                                    data-typed-items=" Ajao Abeeb, A Web Developer, A Freelancer, A Fullstack Developer, A Technical Writer, A Graphics Designer"></span>
+
                             </div>
-                            <p class="mt-3">Building a successful product is a challenge. I am highly energetic in
+                            <p class="mt-3 p-text">Building a successful product is a challenge. I am highly energetic
+                                in
                                 user experience design, interfaces and web development.</p>
-                        </div><br>
-                        <div class="socialbtn">
-                            <a href="https://wa.link/oi8ss2" target="_blank"><i class="fab fa-whatsapp "></i></a>
-                            <a href="https://linkedin/in/abeeb-ajao" target="_blank"><i class="fab fa-linkedin "></i>
-                            </a>
-                            <a href="https://twitter.com/Adebobby_tech" target="_blank"> <i
-                                    class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100083784663959" target="_blank"><i
-                                    class="fab fa-facebook"></i></a>
-                            <a href="http://github.com/Ajao-Abeeb" target="_blank"> <i class="fab fa-github"></i></a>
                         </div>
+
                         <hr>
-                        <br>
-                        <div class="resume">
+
+                        <div class="resume animate-box" data-animate-effect="fadeIn">
                             <a href="image/resume.pdf" target="_blank" download="resume.doc"><button
-                                    class="btn btn-outline-primary" type="button">Download Cv</button></a>
+                                    class="btn btn-lg btn-outline-primary" type="button">Download Cv</button></a>
+                            <a href="https://wa.link/oi8ss2" class="btn btn-lg btn-primary">Let Chat</a>
                         </div>
                     </div>
 
                 </div>
             </div><br><br><br>
 
-            <div class="col-md-5 col-sm-10 mt-5">
+            <div class="col-md-5 col-sm-10 mt-5 img-background">
                 <img src="image/vet.png" class=" img-fluid " alt="computer Scienstist">
             </div>
         </div>
@@ -112,8 +137,8 @@
 
         <div class=" row   justify-content-between">
 
-            <div class="col-md-5 col-sm-10 mt-4 align-items-center ">
-                <div class="h-100 align-items-center ">
+            <div class="col-md-5 col-sm-10 mt-4  ">
+                <div class="h-100   ">
                     <h2 class="card-header text-center" id="about me">ABOUT ME</h2>
                     <br>
                     <div class="d-flex justify-content-center align-items-center">
@@ -121,8 +146,8 @@
                     </div>
                     <br><br>
                     <div class="body">
-                        <h4 class="text-center"></h4>
-                        <p class=" text-justify container"> I am Ajao Abeeb, a veteran website developer and
+
+                        <p class=" text-justify container mt-3"> I am Ajao Abeeb, a veteran website developer and
                             graphic designer with
                             over 2 years of experience in the field. I work with both small and large scale
                             buisness to help them build an impactful websites which easily cause traffic. I enjoy
@@ -131,7 +156,7 @@
                             I also find pleasure in designing, logos, branding and marketing collateral for buisnesses.
                             When I'm not knee-deep in code or
                             design, I spend time with my family and friends, playing chess and read.</p>
-                        <br><br><br><br>
+
                     </div>
                 </div>
             </div>
@@ -142,20 +167,20 @@
                     <h2 class="card-header text-center" id="skills">SKILLS</h2>
                     <br><br>
                     <div class="body container">
-                        <p class="title p text-justify  ">As a website developer, I am responsible for creating and
+                        <p class="   text-justify  ">As a website developer, I am responsible for creating and
                             maintaining the code that makes your website work, I'm also able to help you choose the
                             right platform and design templates for your site. Additionally, I can create custom scripts
                             and application to improve your websites's functionality.</h5>
                             <br>
                             <p class="text-center small"> Programming Skills</p>
-                            <div class="row ">
-                                <div class="col-3 ">
+                            <div class="row animate-box">
+                                <div class="col-3 animate-box" data-animate-effect="fadeIn">
                                     <img src="image/html_5_48px.png" alt="" class="skills-img">
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 animate-box" data-animate-effect="fadeIn">
                                     <img src="image/css3_48px.png" alt="" class="skills-img">
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 animate-box" data-animate-effect="fadeIn">
                                     <img src="image/c_sharp_logo_2_48px.png" alt="" class="skills-img">
                                 </div>
                                 <div class="col-3">
@@ -226,84 +251,87 @@
                 <h2 class="card-title text-center section-heading text-uppercase" id="project">PROJECTS</h2>
                 <p class="text-center  small  ">Some of my project are listed here</p>
             </div>
-            <div class="card-body row ">
-
+            <div class=" row ">
                 <div class="col-md-4 col-sm-12 mb-4">
-                    <img class=" img-thumbnail" src="image/project-ria.png" alt="">
-                    <h5 class="portfolio-caption-heading text-center">House Estate</h5>
-                    <div class="code">
-                        <a href="https://github.com/Ajao-Abeeb/Ria-estate">
-                            <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-code"></i>
-                            </p>
-                        </a>
-                        <a href="https://boisterous-manatee-363f3a.netlify.app/" target="_blank">
-                            <p class="portfolio-caption-subheading text-center text-muted"><i
-                                    class="fa fa-play-circle"></i></p>
-                        </a>
+                    <div class="body-2">
+                        <img class=" img-thumbnail" src="image/project-ria.png" alt="">
+                        <h3 class="portfolio-caption-heading text-center">House Estate</h3>
+                        <div class="code">
+                            <a href="https://github.com/Ajao-Abeeb/Ria-estate">
+                                <p class="codei"><i class="fa fa-code"></i>
+                                </p>
+                            </a>
+                            <a href="https://boisterous-manatee-363f3a.netlify.app/" target="_blank">
+                                <p class="codei"><i class="fa fa-play-circle"></i></p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 mb-4">
-                    <img class=" img-thumbnail" src="image/project-car.png" alt="">
-                    <h5 class="portfolio-caption-heading text-center">CarZone Website</h5>
-                    <div class="code">
-                        <a href="https://github.com/Ajao-Abeeb/Car-website">
-                            <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-code"></i>
-                            </p>
-                        </a>
-                        <a href="https://fanciful-panda-f56030.netlify.app/">
-                            <p class="portfolio-caption-subheading text-center text-muted"><i
-                                    class="fa fa-play-circle"></i>
-                        </a>
-                        </p>
+                    <div class="body-2">
+                        <img class=" img-thumbnail" src="image/project-car.png" alt="">
+                        <h3 class="portfolio-caption-heading text-center">CarZone Website</h5>
+                            <div class="code">
+                                <a href="https://github.com/Ajao-Abeeb/Car-website">
+                                    <p class="codei"><i class="fa fa-code"></i>
+                                    </p>
+                                </a>
+                                <a href="https://fanciful-panda-f56030.netlify.app/">
+                                    <p class="codei"><i class="fa fa-play-circle"></i></p>
+                                </a>
+                            </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 mb-4">
-                    <img class="  img-thumbnail" src="image/images.jfif" alt="">
-                    <h5 class="portfolio-caption-heading text-center">Technical Writer</h5>
-                    <div class="code">
-                        <a href="https://adebobbytech.hashnode.dev/">
-                            <p class="portfolio-caption-subheading text-center text-muted"><i
-                                    class="fa fa-play-circle"></i></p>
-                        </a>
+                    <div class="body-2">
+                        <img class="  img-thumbnail" src="image/images.jfif" alt="">
+                        <h3 class="portfolio-caption-heading text-center">Technical Writer</h3>
+                        <div class="code">
+                            <a href="https://adebobbytech.hashnode.dev/">
+                                <p class="codei"><i class="fa fa-play-circle"></i></p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 mb-4 ">
-                    <img class="  img-thumbnail" src="image/project-shoe.png" alt="">
-                    <h5 class="portfolio-caption-heading text-center">Shoe Ecommerce</h5>
-                    <div class="code">
-                        <a href="https://github.com/Ajao-Abeeb/shoe-website">
-                            <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-code"></i>
-                            </p>
-                        </a>
-                        <a href="https://tangerine-sherbet-bd1dc2.netlify.app/">
-                            <p class="portfolio-caption-subheading text-center text-muted"><i
-                                    class="fa fa-play-circle"></i>
-                        </a>
-                        </p>
+                    <div class="body-2">
+                        <img class="  img-thumbnail" src="image/project-shoe.png" alt="">
+                        <h3 class="portfolio-caption-heading text-center">Shoe Ecommerce</h3>
+                        <div class="code">
+                            <a href="https://github.com/Ajao-Abeeb/shoe-website">
+                                <p class="codei"><i class="fa fa-code"></i>
+                                </p>
+                            </a>
+                            <a href="https://tangerine-sherbet-bd1dc2.netlify.app/">
+                                <p class="codei"><i class="fa fa-play-circle"></i></p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 mb-4 mb-sm-0 ">
-                    <img class="  img-thumbnail" src="image/project-travler.png" alt="">
-                    <h5 class="portfolio-caption-heading text-center">Traveler</h5>
-                    <div class="code">
-                        <a href="https://github.com/Ajao-Abeeb/traveler">
-                            <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-code"></i>
-                            </p>
-                        </a>
-                        <a href="https://fancy-jelly-cace1b.netlify.app/">
-                            <p class="portfolio-caption-subheading text-center text-muted"><i
-                                    class="fa fa-play-circle"></i>
-                        </a>
-                        </p>
+                    <div class="body-2">
+                        <img class="  img-thumbnail" src="image/project-travler.png" alt="">
+                        <h3 class="portfolio-caption-heading text-center">Traveler</h3>
+                        <div class="code">
+                            <a href="https://github.com/Ajao-Abeeb/traveler">
+                                <p class="codei"><i class="fa fa-code"></i>
+                                </p>
+                            </a>
+                            <a href="https://fancy-jelly-cace1b.netlify.app/">
+                                <p class="codei"><i class="fa fa-play-circle"></i></p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <img class=" img-thumbnail" src="image/uiux.jpg" alt="ui/ux design">
-                    <h5 class="portfolio-caption-heading text-center">Shopping</h5>
-                    <div class="code">
-                        <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-code"></i></p>
-                        <p class="portfolio-caption-subheading text-center text-muted"><i class="fa fa-play-circle"></i>
-                        </p>
+                    <div class="body-2">
+                        <img class=" img-thumbnail" src="image/uiux.jpg" alt="ui/ux design">
+                        <h3 class="portfolio-caption-heading text-center">Shopping</h3>
+                        <div class="code">
+                            <p class="codei"><i class="fa fa-code"></i></p>
+                            <p class="codei"><i class="fa fa-play-circle"></i>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -312,24 +340,50 @@
         </div>
     </div>
     <!-- contact me -->
-     
+
     <section class="page-section mt-5" id="contact">
         <div class="card-header">
             <h2 class="card-title text-center section-heading text-uppercase" id="contact me">CONTACT ME</h2>
-        </div> 
+        </div>
         <div class="container   " id="contact">
-
+            <div class="row">
+                <div class="col-lg-4 ">
+                    <div class="contact">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                        <h6>Whatsapp</h6>
+                        <h6>08121488174</h6>
+                        <h6><a href="https://wa.link/oi8ss2" target="_blank">Send a message</a></h6>
+                    </div>
+                </div>
+                <div class="col-lg-4   ">
+                    <div class="contact mt-5">
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <h6>Twitter</h6>
+                        <h6>Adebobby_tech</h6>
+                        <h6><a href="https://wa.link/oi8ss2" target="_blank">Send a message</a></h6>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact mt-5">
+                        <i class="fa fa-envelope fa-2x"></i>
+                        <h6>Email</h6>
+                        <h6>ajaoabeeb526@gmail.com</h6>
+                        <h6><a href="mailto:ajaoabeeb526@gmail.com" target="_blank">Send a message</a></h6>
+                    </div>
+                </div>
+            </div>
             <form method="POST" action="https://formspree.io/f/mnqyzzyq" id="contact">
                 <div class="row align-items-stretch mt-5">
                     <div class="col-md-6">
                         <div class="form-group mb-5">
                             <!-- name -->
                             <input class="form-control control" id="name" type="text" placeholder="Your Name *"
-                                data-sb-validations="required" name='name' required/>
-                         </div>
+                                data-sb-validations="required" name='name' required />
+                        </div>
                         <div class="form-group mb-5">
                             <!-- Email address input-->
-                            <input class="form-control control" id="email" type="email" placeholder="Your Email *" name="'email" required />
+                            <input class="form-control control" id="email" type="email" placeholder="Your Email *"
+                                name="'email" required />
                         </div>
                         <div class="form-group mb-md-0 mb-5">
                             <!-- Phone number input-->
@@ -346,85 +400,70 @@
                     </div>
                 </div><br><br>
                 <!-- Submit Button-->
-                <div class="text-center"><button class="btn btn-outline-primary btn-xl text-uppercase "
-                        id="submitButton" type="submit">Send Message</button></div>
+                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase " id="submitButton"
+                        type="submit">Send Message</button></div>
                 <br><br>
             </form>
         </div>
     </section>
-     
+
     <footer>
         <div class="container">
-            <div class="row mt-3">
-                <div class="col-lg-4 col-sm-2 mb-4">
-                    <div class="  text-justify  ">
-                        <h3 class="" style="  border-bottom:1px solid white;">Quick Link</h3>
+            <div class="row mt-5">
+                <div class="col-lg-6 col-sm-12 mb-4">
+                    <div class="mt-5">
+                        <h3 class="aaa"> <u> Quick Link </u></h3>
 
                         <a class="nav-link aaa" href="#home">
-                            <h6>>Home</h6> <span class="sr-only">(current)</span>
+                            <h6>Home</h6> <span class="sr-only">(current)</span>
                         </a>
 
                         <a class="nav-link aaa" href="#about me">
-                            <h6>>About me</h6>
+                            <h6>About me</h6>
                         </a>
 
                         <a class="nav-link aaa" href="#skills">
-                            <h6>>Skills</h6>
+                            <h6>Skills</h6>
                         </a>
 
                         <a class="nav-link aaa" href="#project">
-                            <h6>>Project</h6>
+                            <h6>Project</h6>
                         </a>
 
                         <a class="nav-link aaa" href="#contact me">
-                            <h6>>Contact me</h6>
+                            <h6>Contact me</h6>
                         </a>
                     </div>
+                    <div class="text-center">
+                        <a href="https://wa.link/oi8ss2" target="_blank"><i class="fab fa-whatsapp "></i></a>
+                        <a href="" target="_blank"><i class="fab fa-linkedin "></i> </a>
+                        <a href="https://twitter.com/Adebobby_tech" target="_blank"> <i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100083784663959" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="http://github.com/Ajao-Abeeb" target="_blank"> <i class="fab fa-github"></i></a>
+                        <p class="aaa  ">&copy Ajao Abeeb, All rights reserved </p>
+                    </div>
+
                 </div>
-                <div class="col-lg-4 col-sm-4 mb-4">
-                        <h3>Address</h3>
-                        <p class="text-justify" style="font-size: 15px;  ;"> <i class="fa fa-map-marker-alt"></i> 52,Sanyo temidire Street,<br>Lagos-Ibadan expressway,
-                            Nigeria.</p>
-                        <a href="mailto:ajaoabeeb526@gmail.com">
-                            <p class="text-light" style="font-size: 15px;"> <i class="fa  fa-envelope"></i> ajaoabeeb526@gmail.com</p>
-                        </a>
-                        <a href="tel:ajaoabeeb526@gmail.com">
-                            <p class="text-light" style="font-size: 15px;"> <i class="fa  fa-phone "></i> +2348121488174</p>
-                        </a>
-                        <div class="">
-                            <a href="https://wa.link/oi8ss2" target="_blank"><i class="fab fa-whatsapp "></i></a>
-                            <a href="" target="_blank"><i class="fab fa-linkedin "></i> </a>
-                            <a href="https://twitter.com/Adebobby_tech" target="_blank"> <i
-                                    class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100083784663959" target="_blank"><i
-                                    class="fab fa-facebook"></i></a>
-                            <a href="http://github.com/Ajao-Abeeb" target="_blank"> <i class="fab fa-github"></i></a>
-                        </div>
-                        <p class=" mt-3 ">FOLLOW FOR MORE!!</p>
-                </div>
-                <div class="col-lg-4">
-                    <h3 class="text-center " style="border-bottom:1px solid white;">News Letter</h3>
-                    <p style=" font-size: 15px;" class="text-justify">I have many ready template for any
-                        project, just give me a dm at ajaoabeeb526@gmail.com . More project is going on. Let connect.
+                <div class="col-lg-6 mt-5 ">
+                    <h3 class="aaa ">Get In Touch</h3>
+                    <p class="aaa"> I'm looking for any new opportunities, my inbox is always open. Interested in
+                        working together? or just want to talk? I'll buy the coffee.
                     </p>
-
-                    <form action="" method="POST" role="form">
-                        <div class="form-group">
-
-                            <input type="text" class="form-control" id="" placeholder="Email*">
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button type="submit" class="btn btn-outline-primary text-light">SEND</button>
-                        </div>
-                    </form>
+                    <div class="bbtn">
+                        <button class=" btn-let ">Let Do This</button>
+                    </div>
                 </div>
-         </div>
+
+                <br><br><br><br><br><br><br><br><br></br>
+            </div>
+
         </div>
     </footer>
 
     <!-- to top -->
     <a id="backtotop" href="#top"><i class="fa fa-arrow-up-from-ground-water"></i></a>
-     
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

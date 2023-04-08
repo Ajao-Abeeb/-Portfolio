@@ -1,38 +1,44 @@
 body {
-  background-color: #1b334be7;
+  background-color: #1F1F39;
   overflow-x: hidden;
-  font-family:sans-serif;
-  color: #ffffff9f;;
+  font-family: 'Poppins';
+  color: white;
 }
 
-a {
+a,
+a:hover {
   text-decoration: none;
+  color: #2C2B6D;
 }
 
- .loader_bg {
+.loader_bg {
   position: fixed;
   z-index: 9999;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   background-color: white;
-} 
+}
+
 .loader {
   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   -webkit-transform-style: preserve-3d;
 }
 
 .loader img {
   height: auto;
 }
-hr{
- border: 1px solid;
+
+hr {
+  border: 1px solid;
+  margin-top: 20px;
 }
+
 /* nav */
 .navbar {
-  position:sticky;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 15;
@@ -45,40 +51,50 @@ hr{
 
 .navbar-brand h3 {
   color: white;
-  
+
 }
- 
+
 .navbar-nav .nav-item .nav-link:hover {
   color: rgb(32, 187, 218);
 }
- .animate{
-  font-size: 33px;
- }
-.typed{
+
+.header {
+  display: none;
+}
+
+.animate {
+  font-size: 22px;
+}
+
+.typed,
+.typed-cursor {
   font-size: 33px;
   color: rgb(32, 187, 218);
 }
-.resume{
+
+.p-text {
+  color: #A7A6B6;
+}
+
+.resume {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
- 
+
 /* socialbtn */
 .fa-whatsapp {
-  color: rgb(32, 187, 218);
-  font-size: 30px;
+  color: #2C2B6D;
 }
-.fa{
- color: rgb(32, 187, 218)
-}
+
 .fa-whatsapp:hover {
   color: rgb(1, 93, 1);
 }
 
 .fa-linkedin {
-  color: rgb(32, 187, 218);
-  font-size: 30px;
+  color: #2C2B6D;
+  /*  ; */
 }
 
 .fa-linkedin:hover {
@@ -86,8 +102,8 @@ hr{
 }
 
 .fa-twitter {
-  color: rgb(32, 187, 218);
-  font-size: 30px;
+  color: #2C2B6D;
+  /*  ; */
 }
 
 .fa-twitter:hover {
@@ -95,8 +111,8 @@ hr{
 }
 
 .fa-facebook {
-  color: rgb(32, 187, 218);
-  font-size: 30px;
+  color: #2C2B6D;
+  /*  ; */
 }
 
 .fa-facebook:hover {
@@ -104,8 +120,8 @@ hr{
 }
 
 .fa-github {
-  color: rgb(32, 187, 218);
-  font-size: 30px;
+  color: #2C2B6D;
+
 }
 
 .fa-github:hover {
@@ -115,38 +131,67 @@ hr{
 /* Quicklink */
 .aaa {
   text-decoration: none;
-  color: white;
+  color: #2C2B6D;
+  text-align: center;
+  justify-content: center;
 }
 
 
 h2 {
-  color: rgb(32, 187, 218);
+  color: #4DC3FF;
 }
-.section-profile{
+
+.body {
+  background: #325B87;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 50px;
+  color: #94B1D1;
+}
+
+.section-profile {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .image {
   filter: brightness(60%);
   border-radius: 50%;
   height: 200px;
   width: 200px;
-  
+
 }
 
-
-#contact {
-  background-color: #28333e;
-  background-image: url("../image/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.contact {
+  text-align: center;
+  line-height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: #2C2B6D;
+  border-radius: 20px;
+  width: 300px;
+  height: 150px;
+  margin: auto;
 }
 
-.portfolio-caption-heading{
-  color: black;
+.contact i {
+  color: white;
+}
+
+.contact h6 {
+  color: #ADAFD8;
+}
+
+.contact h6 a {
+  color: #6F9AE8;
+}
+
+.portfolio-caption-heading {
+  color: white;
   font-weight: 500;
 }
+
 #backtotop {
   z-index: 999;
   display: inline-block;
@@ -161,50 +206,81 @@ h2 {
   color: rgb(32, 187, 218);
   border-radius: 50px;
   background-color: #28333e;
-   
+
 }
-#backtotop   {
-  animation: spin  2s  linear infinite;
+
+#backtotop {
+  animation: spin 2s linear infinite;
 }
-@keyframes spin{
-  0%{
-        transform: translateY(-5px);
+
+@keyframes spin {
+  0% {
+    transform: translateY(-5px);
   }
+
   100% {
     transform: translateY(-50px);
   }
 }
-.img-thumbnail{
+
+.img-thumbnail {
   height: 199px;
   width: 400px;
+  border-radius: 20px;
 }
-.img-fluid{
+
+.img-fluid {
   width: 100%;
 }
-.small{
+
+.small {
   font-style: italic;
 }
-.code{
+
+.code {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  bottom: 70px;
   margin: 0 14px 0 14px;
 }
-.portfolio-caption-subheading{
-  background-color: #28333e;
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
-  
+
+.codei {
+  background: #2C2B6D;
+  color: #A1A3CA;
+  padding: 10px;
+  border: none;
+  font-size: 19px;
+  border-radius: 50%;
+
 }
-.portfolio-caption-subheading i {
-  color: rgb(32, 187, 218);
-  margin-top: 7px;
-}
-.skills-img{
+
+.skills-img {
   height: 48px;
 }
+
+.body-2 {
+  padding: 20px;
+  background: #2C2B6D;
+  border-radius: 50px;
+}
+
+footer {
+  background: #45B5FF;
+}
+
+.bbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-let {
+  background: #2C2B6D;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
 @media(max-width: 414px) {
 
   .socialbtn {
@@ -213,16 +289,77 @@ h2 {
     align-items: center;
     padding: 5px;
   }
-  #back , #backtotop{
+
+  #backtotop {
     right: 20px;
     z-index: 999;
     position: fixed;
+    bottom: 70px;
   }
-  
+
+  .navbar {
+    display: none;
+  }
+
+  .up {
+    margin-bottom: 20px;
+  }
+
+  .img-background {
+    background-color: #3EA1E4;
+    border-radius: 50% 50% 0 0;
+
+  }
+
+  .header {
+    display: block;
+    background: rgba(223, 221, 221, 0.155);
+    position: fixed;
+    bottom: 20px;
+    z-index: 999;
+    width: 100%;
+    border-radius: 50px;
+    backdrop-filter: blur(30px);
+  }
+
+  .ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .ul .nav-item {
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .head {
+    color: white !important;
+    font-weight: 900;
+    line-height: 30px;
+  }
+
+  .ul>li>.nav-link:hover,
+  .ul>li.active>.nav-link,
+  .ul>li>.nav-link:focus {
+    background: #3EA1E4;
+    border-radius: 50px;
+  }
+
+
+  .body {
+    background: #325B87;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 50px;
+    color: #94B1D1;
+  }
+
 }
 
-@media (max-width: 390px){
- #home{
-  font-size: 12px;
- }
+@media (max-width: 390px) {
+  #home {
+    font-size: 12px;
+  }
 }
